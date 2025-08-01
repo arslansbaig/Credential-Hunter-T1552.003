@@ -30,6 +30,15 @@ This script aligns with the MITRE ATT&CK technique **T1552.003 – Credentials i
 
 ---
 
+## 🧾 Output Sample
+```text
+[+] Scanning for credential artifacts in scripts...
+Found potential credential in C:\Users\admin\startup.ps1:
+Line 12: $dbPassword = "SuperSecret123!"
+```
+
+---
+
 ## ⚙️ Prerequisites
  - PowerShell 5.1+
  - Read access to target folders
