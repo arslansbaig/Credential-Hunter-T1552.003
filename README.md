@@ -36,4 +36,4 @@ This script aligns with the MITRE ATT&CK technique **T1552.003 – Credentials i
 C:\
 └── Temp\
     └── Artifacts\
-        └── ScriptCredentialHunter.txt
+        └── T1552.003-CredentialsInScripts.txt
