@@ -1,4 +1,4 @@
-# T1552.003 – Script Credential Hunter
+# T1552.003 – Credential Hunter
 
 This repository contains a PowerShell script that searches for hardcoded credentials, API keys, connection strings, and password references inside script files (e.g., `.ps1`, `.bat`, `.vbs`, `.cmd`) on a target system.
 
