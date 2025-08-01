@@ -1,1 +1,3 @@
-
+[+] Scanning for credential artifacts in scripts...
+Found potential credential in C:\Users\admin\startup.ps1:
+Line 12: $dbPassword = "SuperSecret123!"
