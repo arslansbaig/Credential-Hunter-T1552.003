@@ -31,9 +31,9 @@ This script aligns with the MITRE ATT&CK technique **T1552.003 – Credentials i
 ---
 
 ## ⚙️ Prerequisites
-> PowerShell 5.1+
-> Read access to target folders
-> No external dependencies
+ - PowerShell 5.1+
+ - Read access to target folders
+ - No external dependencies
 
 ---
 
