@@ -9,7 +9,7 @@ This script aligns with the MITRE ATT&CK technique **T1552.003 – Credentials i
 ## 🛠 Script Details
 
 - **Script Name**: `T1552.003-ScriptCredentialHunter.ps1`
-- **MITRE ATT&CK ID**: [T1552.003 – Credentials in Files: Scripts](https://attack.mitre.org/techniques/T1552/003/)
+- **MITRE ATT&CK ID**: [T1552.003 – Credentials in Files
 - **Author**: Arslan Baig
 - **Category**: Credential Access
 - **Function**: Scans for potential credentials and secrets hardcoded in scripts across common file paths.
