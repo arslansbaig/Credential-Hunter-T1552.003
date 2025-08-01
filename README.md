@@ -53,3 +53,9 @@ C:\
 └── Temp\
     └── Artifacts\
         └── T1552.003-CredentialsInScripts.txt
+```
+
+## ✅ Use Cases
+- Red team credential discovery
+- Blue team detection tuning (e.g., matching Sysmon Event ID 1 for script access)
+- Compliance scanning for insecure coding practices
