@@ -58,4 +58,3 @@ foreach ($path in $searchPaths) {
 
 Add-Content $artifactFile "Scan completed on $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')"
 Write-Output "[+] Script credential scan completed. Check $artifactFile"
-
