@@ -1,9 +1,9 @@
 <#
 .SYNOPSIS
-    Simulates MITRE ATT&CK T1552.003 by searching for credentials in user script files.
+    Simulates MITRE ATT&CK T1552.003 by searching for credentials in script files.
 
 .DESCRIPTION
-    - Searches *.ps1 and *.bat files in user's Desktop and Documents folders
+    - Searches *.ps1 and *.bat files in user's Desktop, Documents, and entire C:\ drive
     - Looks for keywords like password, secret, admin_pass, token
     - Saves findings to C:\Temp\Artifacts\T1552.003-CredentialsInScripts.txt
 
@@ -11,14 +11,10 @@
     Arslan Baig
 #>
 
-# Set user-specific folders
-$userProfile = [Environment]::GetFolderPath("UserProfile")
-
+# Set folders to search
 $searchPaths = @(
-    (Join-Path $userProfile "Desktop")
-    (Join-Path $userProfile "Documents")
+    "C:\"
 )
-
 
 # Output path
 $artifactDir = "C:\Temp\Artifacts"
@@ -57,5 +53,4 @@ foreach ($path in $searchPaths) {
 }
 
 Add-Content $artifactFile "Scan completed on $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')"
-Write-Output ("[+] Script credential scan completed. Check {0}" -f $artifactFile)
-
+Write-Output "[+] Script credential scan completed. Check $artifactFile"
