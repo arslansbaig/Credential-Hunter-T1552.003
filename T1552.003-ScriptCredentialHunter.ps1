@@ -5,7 +5,7 @@
 .DESCRIPTION
     - Searches *.ps1 and *.bat files in user's Desktop, Documents, and entire C:\ drive
     - Looks for keywords like password, secret, admin_pass, token
-    - Saves findings to C:\Temp\Artifacts\T1552.003-CredentialsInScripts.txt
+    - Saves findings to C:\Temp\Artefacts\T1552.003-CredentialsInScripts.txt
 
 .AUTHOR
     Arslan Baig
@@ -17,7 +17,7 @@ $searchPaths = @(
 )
 
 # Output path
-$artifactDir = "C:\Temp\Artifacts"
+$artifactDir = "C:\Temp\Artefacts"
 $artifactFile = "$artifactDir\T1552.003-CredentialsInScripts.txt"
 
 # Ensure output folder
@@ -54,3 +54,4 @@ foreach ($path in $searchPaths) {
 
 Add-Content $artifactFile "Scan completed on $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')"
 Write-Output "[+] Script credential scan completed. Check $artifactFile"
+
