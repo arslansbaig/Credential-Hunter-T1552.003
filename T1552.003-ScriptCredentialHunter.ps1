@@ -18,7 +18,7 @@ $searchPaths = @(
 
 # Output path
 $artifactDir = "C:\Temp\Artefacts"
-$artifactFile = "$artifactDir\T1552.003-CredentialsInScripts.txt"
+$artifactFile = "$artifactDir\Step5-T1552.003-CredentialsInScripts.txt"
 
 # Ensure output folder
 if (-not (Test-Path $artifactDir)) {
@@ -54,4 +54,5 @@ foreach ($path in $searchPaths) {
 
 Add-Content $artifactFile "Scan completed on $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')"
 Write-Output "[+] Script credential scan completed. Check $artifactFile"
+
 
